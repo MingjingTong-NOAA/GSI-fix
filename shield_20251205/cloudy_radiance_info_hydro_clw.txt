@@ -1,0 +1,62 @@
+radiance_mod_instr_input::
+!obsname    obsloc    ex_obserr  ex_biascor  cld_effect
+ gmi        sea       ex_obserr3   .true.      .false.
+ amsua      sea       ex_obserr1   .true.      .true.
+ atms       sea       ex_obserr1   .true.      .true.
+::
+  
+obs_amsua::
+!  Parameters for the observation error model
+!  cclr [kg/m2] & ccld [kg/m2]: range of cloud amounts 
+!  over which the main increase in error take place
+!  ch   cclr   ccld   cld_pred  cld_diff
+    1   0.050  0.630    clw       0.05
+    2   0.030  0.600    clw       0.05
+    3   0.025  0.370    clw       0.05
+    4   0.020  0.750    clw       0.05
+    5   0.080  0.850    clw       0.05
+    6   0.030  0.850    clw       0.05
+   15   0.010  0.300    clw       0.05
+::        
+
+obs_atms::
+!  Parameters for the observation error model
+!  cclr [kg/m2] & ccld [kg/m2]: range of cloud amounts
+!  over which the main increase in error take place
+!  ch   cclr   ccld   cld_pred  cld_diff
+    1   0.030  0.675    clw       0.05
+    2   0.030  0.550    clw       0.05
+    3   0.030  0.350    clw       0.05
+    4   0.030  0.310    clw       0.05
+    5   0.030  0.575    clw       0.05
+    6   0.020  0.750    clw       0.05
+    7   0.030  0.750    clw       0.05
+   16   0.010  0.260    clw       0.05
+   17   0.030  0.580    clw       0.05
+   18   1.000  30.00   si1617     2.50
+   19   1.000  30.00   si1617     2.50
+   20   1.000  25.00   si1617     2.50
+   21   1.000  30.00   si1617     2.50
+   22   1.000  30.00   si1617     2.50
+::
+
+obs_gmi::
+!  Parameters for the observation error model
+!  cclr [kg/m2] & ccld [kg/m2]: range of cloud amounts
+!  over which the main increase in error take place
+!  ch   cclr   ccld   cldval1
+    1   0.050  0.200  17.00
+    2   0.050  0.200  23.00
+    3   0.050  0.200  13.00
+    4   0.050  0.200  25.00
+    5   0.050  0.200  11.00
+    6   0.050  0.200  13.00
+    7   0.050  0.200  23.00
+    8   0.050  0.200  10.00
+    9   0.050  0.200  20.00
+   10   0.050  0.300  15.00
+   11   0.050  0.200  20.00
+   12   0.050  0.300   8.00
+   13   0.050  0.300  13.00
+::
+
